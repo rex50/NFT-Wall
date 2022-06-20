@@ -2,7 +2,7 @@ import { View, Text, Image, TextInput } from 'react-native'
 
 import { COLORS, FONTS, SIZES, assets } from '../constants'
 
-const HomeHeader = () => {
+const HomeHeader = ({ onSearched }) => {
   return (
     <View
       style={{
@@ -112,7 +112,7 @@ const HomeHeader = () => {
             style={{
               flex: 1
             }}
-            onChangeText={() => {}}
+            onChangeText={ onSearched }
           />
         </View>
       </View>
